@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<app-appheader></app-appheader>
+<app-appleftpanel-selector></app-appleftpanel-selector>
+<div class="main-content">
+    <div class="title">
+        <!-- <span style="color: #9999FF">{{ appName }} </span> Analytics<br> -->
+        <button class="button" (click)="subscribe()">Upgrade to PRO</button><br>
+    </div>
+
+    <div class="main">
+        <div class="analytics">
+            <div class="titles">{{ analytic_request }}</div>
+            <div class="chart">
+                <i class="fa fa-bar-chart fa-3x"></i>
+                <div class="chart_desc">
+                    {{ total_requests }}
+                </div>
+            </div>
+        </div>
+
+        <div class="analytics">
+            <div class="titles">{{ analytic_user }}</div>
+            <div class="chart">
+                <i class="fa fa-group fa-3x"></i>
+                <div class="chart_desc">
+                    {{ total_users }}
+                </div>
+            </div>
+        </div>
+
+        <div class="analytics">
+            <div class="titles">{{ analytic_billing }}</div>
+            <div class="chart">
+                <i class="fa fa-cart-plus fa-3x"></i>
+                <div class="chart_desc">
+                    {{ sub_type }}
+                </div>
+            </div>
+        </div>
+
+        <div class="widget fullwidth">
+            <div class="title">{{ analytic_chart }}<br><span style="color: #9999FF">{{ chart_description }}</span></div>
+            <div class="chart_column">
+
+                <div class="control-section">
+                    <div align="center">
+                        <!-- <ejs-chart style="display:block;" [chartArea]="chartArea" [width]="width" align="center" id="chartcontainer" -->
+                        <ejs-chart style="display:block;" [chartArea]="chartArea" align="center" id="chartcontainer" [primaryXAxis]="primaryXAxis" [primaryYAxis]="primaryYAxis" [title]="title" [tooltip]="tooltip" (load)="load($event)">
+                            <e-series-collection>
+                                <e-series [dataSource]="data" type="Column" xName="x" yName="y" name="Morning" width="2" [marker]="marker">
+                                </e-series>
+                                <e-series [dataSource]="data1" type="Column" xName="x" yName="y" name="Mid-Morning" width="2" [marker]="marker">
+                                </e-series>
+                                <e-series [dataSource]="data2" type="Column" xName="x" yName="y" name="Afternoon" width="2" [marker]="marker">
+                                </e-series>
+                            </e-series-collection>
+                        </ejs-chart>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>

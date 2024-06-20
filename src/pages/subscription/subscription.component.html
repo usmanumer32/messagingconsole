@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<app-appheader></app-appheader>
+<app-appleftpanel-selector></app-appleftpanel-selector>
+<div class="main-content">
+  <div class="title">
+    <button class="button">{{ sub_expiry }}</button><br>
+  </div>
+  <div class="main">
+    <div class="subscription">
+      <div class="titles" style="background: #d29d05;;">{{ sub_free }}</div>
+      <div class="chart">
+        <i class="fa fa-dollar fa-3x"> {{ sub_free_price }}</i>
+        <div class="chart_desc">
+         {{ sub_monthly }}
+        </div>
+      </div>
+      <div class="sub_desc">
+        <div *ngFor="let package of packages">
+          <p class="p">{{ package.Detail }}</p><br>
+        </div>
+        <div class="btn1">
+          Active
+        </div>
+      </div>
+    </div>
+    <div class="subscription">
+      <div class="titles" style="background: #7d1e4a;">{{ sub_basic }}</div>
+      <div class="chart2">
+        <i class="fa fa-dollar  fa-3x"> {{ sub_basic_price }} </i>
+        <div class="chart_desc">
+          {{ sub_monthly }}
+        </div>
+      </div>
+      <div class="sub_desc">
+        <div *ngFor="let package of packages">
+          <p class="p">{{ package.Detail }}</p><br>
+        </div>
+        <div class="btn2">
+          Upgrade
+        </div>
+      </div>
+    </div>
+    <div class="subscription">
+      <div class="titles" style="background:  #14646d;">{{ sub_pro }}</div>
+      <div class="chart3">
+        <i class="fa fa-dollar  fa-3x"> {{ sub_pro_price }}</i>
+        <div class="chart_desc">
+          {{ sub_monthly }}
+        </div>
+      </div>
+      <div class="sub_desc">
+        <div *ngFor="let package of packages">         
+          <p class="p">{{ package.Detail }}</p><br> 
+         <!-- <ul>
+            <li>{{ package.Detail }}</li><br>
+          </ul>  -->        
+        </div>
+        <div class="btn3">
+          Upgrade
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

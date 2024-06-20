@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<div class="navbar">
+    <a class="menu-icon" (click)="openMenu()"><i class="fa fa-bars"></i></a>
+
+    <div class="right-navitems">
+        <a class="user-icon" href="#"><i class="fa fa-user-circle"></i></a>
+        <a class="nav-items" href="#">Documentation</a>
+    </div>
+</div>
+
+<div class="overlay-menu">
+    <div class="app-info">
+        <div class="app-logo">
+            <button class="back" (click)="backClicked()"><i class="fas fa-arrow-left fa-3x"></i></button>
+        </div>
+        <div class="app-name">
+            <label>{{ appName }}</label>
+        </div>
+    </div>
+
+    <div class="menu-div">
+        <a class="menu-items menu-item-support" (click)="activebackground('.menu-item-support')" (click)="openMenu()" routerLink="/analytics"><i class="fa fa-bar-chart"></i>&nbsp;&nbsp;&nbsp;&nbsp;Analytics</a>
+        <a class="menu-items menu-item-support" (click)="activebackground('.menu-item-support')" (click)="openMenu()" routerLink="/billing"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;&nbsp;Subscription</a>
+        <a class="menu-items menu-item-support" (click)="activebackground('.menu-item-support')" routerLink="/loginform"><i
+        class="fa fa-sign-out"></i>&nbsp;&nbsp;&nbsp;Logout</a>
+    </div>
+</div>

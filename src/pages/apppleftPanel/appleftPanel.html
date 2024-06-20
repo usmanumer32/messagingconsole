@@ -1,0 +1,20 @@
+<!Doctype html>
+<div class="left-panel">
+  <div class="app-info">
+    <div class="app-logo">
+      <button class="back" (click)="backClicked()"><i class="fas fa-arrow-left fa-3x"></i></button>
+    </div>
+    <div class="app-name">
+      <label>{{ appName }}</label>
+    </div>
+  </div>
+  <div class="menu-div">
+    <!--  <a class="menu-items menu-item-apps" (click)="activebackground('.menu-item-apps')" routerLink="/apps"><i class="fa fa-tachometer"></i>  &nbsp;&nbsp;&nbsp;Dashboard</a>  -->
+    <a class="menu-items menu-item-support" (click)="activebackground('.menu-item-support')" routerLink="/analytics"><i
+        class="fa fa-bar-chart"></i>&nbsp;&nbsp;&nbsp;&nbsp;Analytics</a>
+    <a class="menu-items menu-item-support" (click)="activebackground('.menu-item-support')" routerLink="/billing"><i
+        class="fa fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;&nbsp;Subscription</a>
+    <a class="menu-items menu-item-support" (click)="activebackground('.menu-item-support')" routerLink="/loginform"><i
+        class="fa fa-sign-out"></i>&nbsp;&nbsp;&nbsp;Logout</a>
+  </div>
+</div>

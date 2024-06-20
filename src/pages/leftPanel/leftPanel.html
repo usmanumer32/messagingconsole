@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<div class="left-panel">
+    <div class="app-info">
+        <div class="app-logo">
+            <img src="../../assets/loading.png">
+        </div>
+        <div class="app-name">
+            <label>Messenger</label>
+        </div>
+    </div>
+    <div class="add-company-text">
+        <p class="new-p-class">Add or Choose a Company</p>
+    </div>
+    <div id="new-select-div" class="styled-select blue semi-squared">
+        <select #company (change)="addCompany(company.value)" [(ngModel)]="selectedCompany">
+            <option *ngFor="let c of retrievedObject" value="{{c.companyName}}" [selected]="c">{{c.companyName}}</option>
+            <option value="Add Company" class="cc">Add Company</option>
+        </select>
+    </div>
+    <div class="menu-div">
+        <a class="menu-items menu-item-apps" (click)="activebackground('.menu-item-apps')" routerLink="/apps"><i class="fa fa-tachometer"></i>  &nbsp;&nbsp;&nbsp;Applications</a>
+        <a class="menu-items" (click)="activebackground('.menu-item-apps')" routerLink="/billing"><i class="fa fa-shopping-cart"></i>&nbsp;&nbsp;&nbsp;Subscription</a>
+        <a class="menu-items menu-item-support" (click)="activebackground('.menu-item-support')" routerLink="/support"><i class="fa fa-phone"></i>&nbsp;&nbsp;&nbsp;&nbsp;Support</a>
+        <a class="menu-items" (click)="activebackground('.menu-item-apps')" routerLink="/loginform"><i class="fa fa-sign-out"></i>&nbsp;&nbsp;&nbsp;Logout</a>
+    </div>
+</div>
+
+
+<div class="company-modal2">
+    <div class="close-modal">
+        <a class="x-icon" (click)="closeModal()"><i class="fa fa-times"></i></a>
+    </div>
+    <div class="company-form">
+        <div class="header-div">
+            <div class="my-logo">
+                <img class="img-app-logo" src="../../assets/loading.png">
+            </div>
+            <div class="header-div-name">
+                <label class="new-label">Messenger</label>
+            </div>
+        </div>
+        <div class="form-body">
+            <input type="text" class="text-input" [(ngModel)]="compan" placeholder="Enter Company Name" required>
+            <button class="btn-block" (click)="addNewCompany()">Save</button>
+        </div>
+    </div>
+</div>

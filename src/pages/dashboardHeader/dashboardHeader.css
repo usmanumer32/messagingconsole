@@ -1,0 +1,574 @@
+.navbar {
+    width: 82%;
+    height: 75px;
+    background-color: whitesmoke;
+    float: right;
+}
+
+.company-modal3 {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.7);
+    left: 0;
+}
+
+.close-modal {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    position: absolute;
+    left: 68%;
+    /* top: 13%; */
+    /* top: 100px; */
+    top: 13vh;
+    text-align: center;
+}
+
+.x-icon {
+    font-size: 25px;
+    color: #2A3F54;
+    cursor: pointer;
+}
+
+.company-form2 {
+    width: 35%;
+    height: 60%;
+    /* margin-top: 130px; */
+    margin-top: 15vh;
+    margin-left: 35%;
+    background-color: whitesmoke;
+    display: none;
+}
+
+.header-div {
+    width: 100%;
+    height: 30%;
+    /* border: 1px solid red; */
+}
+
+.my-logo {
+    width: 43%;
+    height: 100%;
+    /* border: 1px solid green; */
+    float: left;
+}
+
+.img-app-logo {
+    margin-top: 15%;
+    margin-left: 60%;
+}
+
+.header-div-name {
+    width: 55%;
+    height: 100%;
+    /* border: 1px solid black; */
+    float: left;
+    padding-top: 10%;
+}
+
+.btn-block {
+    display: block;
+    width: 77%;
+    margin-left: 10%;
+    margin-top: 2%;
+    color: white;
+    border: none;
+    background-color: #2A3F54;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.add-company-text {
+    width: 100%;
+    height: 40px;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-p-class {
+    font-size: 16px;
+    color: whitesmoke;
+}
+
+.text-input {
+    width: 70%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 1px solid rgb(214, 214, 214);
+    background: #f1f1f1;
+    margin-left: 10%;
+}
+
+.form-body {
+    width: 100%;
+    height: 60%;
+    /* border: 2px solid red; */
+    margin-top: 10%;
+}
+
+.new-label {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: #2A3F54;
+    font-weight: 200;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin: 0 0 1.5rem 0;
+    text-transform: none;
+}
+
+#new-select-div {
+    margin-left: 5%;
+    /* margin-top: 10%; */
+}
+
+.styled-select {
+    background: url(../../assets/dropdown.jpg) no-repeat 96% 0;
+    height: 35px;
+    overflow: hidden;
+    width: 90%;
+}
+
+.styled-select select {
+    background: transparent;
+    border: none;
+    font-size: 14px;
+    height: 100%;
+    padding: 5px;
+    width: 100%;
+}
+
+.semi-squared {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.blue {
+    background-color: whitesmoke;
+}
+
+.select {
+    position: relative;
+    background: #fff;
+    border: 2px solid #1cbe9d;
+    cursor: pointer;
+    height: 40px;
+    width: 30%;
+    float: left;
+    margin-top: 1%;
+    margin-left: 5%;
+    /* border: 1px solid red; */
+}
+
+.select:before {
+    content: '';
+    background: #2A3F54;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    pointer-events: none;
+}
+
+.select:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 7px 0;
+    border-color: #fff transparent transparent transparent;
+    position: absolute;
+    top: 50%;
+    right: 11px;
+    transform: translateY(-50%);
+}
+
+option {
+    font: 300 16px/1.5 'Roboto', sans-serif;
+    padding: 5px 0px;
+}
+
+select {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    -webkit-appearance: none;
+    padding: 0 50px 0 20px;
+    cursor: pointer;
+    /*  font: 300 18px/1.5 'Roboto', sans-serif; */
+    font-size: 15px;
+    text-indent: 5px;
+}
+
+.right-navitems {
+    width: 60%;
+    height: 100%;
+    float: right;
+    /*  border: 1px solid black; */
+}
+
+.add-company-icon {
+    float: left;
+    color: #2A3F54;
+    text-align: center;
+    padding: 13px 16px;
+    text-decoration: none;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.menu-icon {
+    float: left;
+    color: #2A3F54;
+    text-align: center;
+    padding: 13px 16px;
+    text-decoration: none;
+    font-size: 35px;
+    cursor: pointer;
+    display: none;
+}
+
+.user-icon {
+    float: right;
+    color: #2A3F54;
+    text-align: center;
+    padding: 5px 16px;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+.nav-items {
+    float: right;
+    display: block;
+    color: #2A3F54;
+    text-align: center;
+    padding: 23px 16px;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+.overlay-menu {
+    height: 90vh;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 76px;
+    left: 0;
+    background-color: rgb(67, 87, 107);
+    overflow-x: hidden;
+    padding-top: 0px;
+    transition: 0.5s;
+}
+
+.app-info {
+    width: 100%;
+    height: 8%;
+    margin-top: 5%;
+}
+
+.app-logo {
+    height: 100%;
+    width: 30%;
+    float: left;
+    margin-left: 5%;
+}
+
+.app-name {
+    height: 100%;
+    width: 61%;
+    float: right;
+    padding-top: 6%;
+}
+
+label {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: aliceblue;
+    font-weight: 200;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin: 0 0 1.5rem 0;
+    text-transform: none;
+}
+
+.menu-div {
+    margin-top: 5%;
+}
+
+.menu-items {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: whitesmoke;
+    display: block;
+    cursor: pointer;
+}
+
+.menu-items:hover {
+    background-color: rgb(67, 87, 107)
+}
+
+.select {
+    position: relative;
+    background: #fff;
+    border: 2px solid #1cbe9d;
+    cursor: pointer;
+    height: 40px;
+    width: 90%;
+    float: left;
+    margin-top: 1%;
+    margin-left: 5%;
+    margin-bottom: 25px;
+    /* border: 1px solid red; */
+}
+
+.select:before {
+    content: '';
+    background: #2A3F54;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    pointer-events: none;
+}
+
+.select:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 7px 0;
+    border-color: #fff transparent transparent transparent;
+    position: absolute;
+    top: 50%;
+    right: 11px;
+    transform: translateY(-50%);
+}
+
+option {
+    font: 300 16px/1.5 'Roboto', sans-serif;
+    padding: 5px 0px;
+}
+
+select {
+    width: 60%;
+    height: 100%;
+    background: none;
+    border: none;
+    -webkit-appearance: none;
+    padding: 0 50px 0 20px;
+    cursor: pointer;
+    /*  font: 300 18px/1.5 'Roboto', sans-serif; */
+    font-size: 15px;
+    text-indent: 5px;
+}
+
+.show {
+    display: block;
+}
+
+@media screen and (max-width: 1150px) and (min-width: 900px) {
+    .navbar {
+        width: 100%;
+        height: 75px;
+        background-color: whitesmoke;
+        float: right;
+        /* transition: 0.5s; */
+    }
+    .left-panel {
+        display: none;
+    }
+    .right-panel {
+        width: 100%;
+    }
+    .nav-items {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+    select {
+        width: 100%;
+    }
+    .select {
+        margin-left: 0;
+        margin-top: 2%;
+    }
+    .openMenu {
+        /* width: 32%; */
+        width: 300px;
+    }
+    .img-app-logo {
+        margin-left: 38%;
+    }
+    /* .width18 {
+        width: 18%;
+    } */
+}
+
+@media screen and (max-width: 900px) and (min-width: 768px) {
+    .navbar {
+        width: 100%;
+        height: 75px;
+        background-color: whitesmoke;
+        float: right;
+    }
+    .left-panel {
+        display: none;
+    }
+    .right-panel {
+        width: 100%;
+    }
+    .nav-items {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .select {
+        margin-left: 0;
+        margin-top: 2%;
+    }
+    .openMenu {
+        /* width: 45%; */
+        width: 300px;
+    }
+    select {
+        width: 100%;
+    }
+    .company-form2 {
+        width: 40%;
+        height: 60%;
+        margin-left: 31%;
+    }
+    .img-app-logo {
+        margin-top: 15%;
+        margin-left: 40%;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 480px) {
+    .navbar {
+        width: 100%;
+        height: 75px;
+        background-color: whitesmoke;
+        float: right;
+    }
+    .left-panel {
+        display: none;
+    }
+    .right-panel {
+        width: 100%;
+    }
+    .nav-items {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .select {
+        margin-left: 0;
+        margin-top: 2%;
+    }
+    .right-navitems {
+        width: 55%;
+        height: 100%;
+        float: right;
+        /*  border: 1px solid black; */
+    }
+    .openMenu {
+        /* width: 45%; */
+        width: 300px;
+    }
+    select {
+        width: 100%;
+    }
+    .close-modal {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: whitesmoke;
+        position: absolute;
+        left: 75%;
+        /* top: 110px; */
+        text-align: center;
+    }
+    .company-form2 {
+        width: 60%;
+        height: 50%;
+        margin-left: 19%;
+    }
+    .img-app-logo {
+        margin-top: 15%;
+        margin-left: 35%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        width: 100%;
+        height: 75px;
+        background-color: whitesmoke;
+        float: right;
+    }
+    .left-panel {
+        display: none;
+    }
+    .right-panel {
+        width: 100%;
+    }
+    .nav-items {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .select {
+        margin-left: 0;
+        margin-top: 2%;
+    }
+    .right-navitems {
+        width: 49%;
+        height: 100%;
+        float: right;
+        /*  border: 1px solid black; */
+    }
+    .openMenu {
+        /* width: 55%; */
+        width: 300px;
+    }
+    .close-modal {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: whitesmoke;
+        position: absolute;
+        left: 74%;
+        /* top: 110px; */
+        text-align: center;
+    }
+    .company-form2 {
+        width: 60%;
+        height: 50%;
+        margin-left: 19%;
+    }
+    .img-app-logo {
+        margin-top: 15%;
+        margin-left: 35%;
+    }
+}

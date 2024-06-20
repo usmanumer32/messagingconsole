@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<app-dashboardheader-selector></app-dashboardheader-selector>
+<app-leftpanel-selector></app-leftpanel-selector>
+<div class="new-container">
+    <button *ngIf="haveApps" class="app-btn" (click)="openModal('.application-form')"><i class="fa fa-plus-circle"></i>&nbsp;&nbsp;&nbsp;Add
+    Application</button>
+    <div class="applications-list">
+        <!-- <div class="app" *ngFor="let app of apps; let i = index"> -->
+        <div class="no-apps-div" *ngIf="!haveApps">
+            <p class="no-apps-txt">
+                No applications to display<br><br>
+                <a (click)="openModal('.application-form')" class="add-app-anchor"><i class="fa fa-plus-circle"></i>&nbsp;&nbsp;Add Application</a>
+            </p>
+        </div>
+        <div class="app" *ngIf="haveApps">
+            <ng-container *ngFor="let app of CompanyObjToDispaly.apps; let i = index">
+                <div class="applications-logo">
+                    <ngx-avatar name="{{ app.name }}" value="28%" fgColor="white" size="50" textSizeRatio="2.5" [round]="true">
+                    </ngx-avatar>
+                </div>
+                <div class="applications-description">
+                    <a routerLink="/analytics">
+                        <div class="application-name">
+                            <p class="desc-name">{{app.name}}</p>
+                        </div>
+                        <div class="api-key">
+                            <p class="desc-api">{{app.apikey}}</p>
+                        </div>
+                    </a>
+                    <div class="actions">
+                        <a title="edit" (click)="openEditModal('.edit-form',app,i)"><i class="fa fa-edit action-icons"></i></a>
+                        <a title="delete" (click)="openAlert(i)"><i class="fa fa-trash action-icons"></i></a>
+                    </div>
+                </div>
+                <hr>
+            </ng-container>
+
+        </div>
+    </div>
+    <div class="company-modal">
+        <div class="close-modal">
+            <a class="x-icon" (click)="closeModal()"><i class="fa fa-times"></i></a>
+        </div>
+        <div class="company-form">
+            <div class="header-div">
+                <div class="my-logo">
+                    <img class="img-app-logo" src="../../assets/loading.png">
+                </div>
+                <div class="header-div-name">
+                    <label class="new-label">Messenger</label>
+                </div>
+            </div>
+            <div class="form-body">
+                <input type="text" class="text-input" placeholder="Enter Company Name" name="company" required>
+                <button class="btn-block">Save</button>
+            </div>
+        </div>
+        <div class="application-form">
+            <div class="header-div">
+                <div class="my-logo">
+                    <img class="img-app-logo" src="../../assets/loading.png">
+                </div>
+                <div class="header-div-name">
+                    <label class="new-label">Messenger</label>
+                </div>
+            </div>
+            <div class="form-body">
+                <input type="text" class="text-input" [(ngModel)]="name" placeholder="Enter Application Name" name="app" required>
+                <input type="text" class="text-input" [(ngModel)]="apikey" name="api-key" readonly>
+                <button class="btn-block" (click)="addApplication()">Save</button>
+            </div>
+        </div>
+        <div class="edit-form">
+            <div class="header-div">
+                <div class="my-logo">
+                    <img class="img-app-logo" src="../../assets/loading.png">
+                </div>
+                <div class="header-div-name">
+                    <label class="new-label">Messenger</label>
+                </div>
+            </div>
+            <div class="form-body">
+                <input type="text" class="text-input" [(ngModel)]="name" name="app" required>
+                <input type="text" id="copy-apikey" [(ngModel)]="apikey" name="api-key" class="edit-api-key" readonly><a (click)="copyApiKey()"><i class="fa fa-copy edit-api-key-icons"></i></a><a (click)="apiKeyGenerate()"><i
+            class="fa fa-refresh edit-api-key-icons"></i></a>
+                <button class="btn-block" (click)="editApplication()">Save</button>
+            </div>
+        </div>
+    </div>
+</div>

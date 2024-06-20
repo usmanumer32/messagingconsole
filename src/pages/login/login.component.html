@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<app-navheader></app-navheader>
+<div id="wrapper">
+
+    <div id="left">
+        <div id="signin">
+            <div class="logo">
+                <img src="../../assets/img/logo2.png" alt="Appliedline Logo">
+            </div>
+            <form>
+                <div>
+                    <label>Email or UserName</label>
+                    <input type="text" class="text-input" id="username" [(ngModel)]="userName2" name="userName2">
+                </div>
+                <div>
+                    <label>Password</label>
+                    <input type="password" class="text-input" id="password" [(ngModel)]="password2" name="password2">
+                </div>
+                <button type="submit" class="primary-btn" (click)="getInfo()">LogIn</button>
+            </form>
+            <div class="links">
+                <a href="#">Forget password</a>
+            </div>
+            <a href="#" class="secondary-btn">Create an Account</a>
+        </div>
+
+    </div>
+    <div id="right">
+        <div id="rightpart">
+            <div class="rightpart-content">
+                <h1 class="rightpart-text">Let's Create the future <strong>together</strong></h1>
+                <a href="#" class="secondary-btn">Start a Free Trial</a>
+            </div>
+        </div>
+    </div>
+</div>
+<app-foo></app-foo>

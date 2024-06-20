@@ -1,0 +1,583 @@
+.new-container {
+    width: 81%;
+    height: 90vh;
+    float: right;
+}
+
+.contents {
+    width: 100%;
+    height: 89%;
+}
+
+.company-select {
+    width: 15%;
+    float: left;
+    background-color: #2A3F54;
+    color: white;
+    font-size: 16px;
+    margin-left: 5%;
+    margin-top: 2%;
+    height: 40%;
+}
+
+.user-icon {
+    float: right;
+    color: #2A3F54;
+    text-align: center;
+    padding: 13px 16px;
+    text-decoration: none;
+    font-size: 40px;
+}
+
+.app-btn {
+    display: block;
+    width: 20%;
+    margin-left: 5%;
+    margin-top: 2%;
+    color: white;
+    border: none;
+    background-color: #2A3F54;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.applications-list {
+    width: 90%;
+    /* height: fit-content; */
+    min-height: 60%;
+    max-height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.no-apps-div {
+    width: 100%;
+    /* border: 2px solid red; */
+    min-height: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.no-apps-txt {
+    font-size: 1.6rem;
+    color: rgb(156, 156, 156);
+    text-align: center;
+}
+
+.add-app-anchor {
+    border: 1px solid #2A3F54;
+    border-radius: 5px 5px 5px 5px;
+    padding: 7px;
+}
+
+.app {
+    width: 100%;
+    /* height: 100px; */
+    margin-top: inherit;
+    /* border: 2px solid red; */
+}
+
+.swal-button {
+    background: #0a0;
+}
+
+hr {
+    width: 75%;
+    color: whitesmoke;
+}
+
+
+/* ngx-avatar {
+    margin-left: 1px;
+} */
+
+.applications-logo {
+    width: 7%;
+    height: 100%;
+    padding-top: 20px;
+    padding-left: 4%;
+    /* border: 2px solid red; */
+    float: left;
+    /* position: absolute; */
+}
+
+.avatar-container {
+    margin-top: 5%;
+}
+
+.applications-description {
+    width: 87%;
+    height: 80%;
+    /* border: 1px solid blue; */
+    float: right;
+}
+
+.application-name {
+    height: 100%;
+    width: 25%;
+    /* border: 2px solid black; */
+    float: left;
+    padding-top: 1%;
+}
+
+.api-key {
+    height: 100%;
+    width: 50%;
+    /* border: 2px solid green; */
+    float: left;
+    padding-top: 2%;
+}
+
+.actions {
+    height: 100%;
+    width: 23%;
+    /* border: 2px solid green; */
+    float: left;
+}
+
+.desc-name {
+    font-weight: 200;
+    font-size: 1.3rem;
+    color: rgb(36, 33, 66);
+}
+
+.desc-api {
+    font-weight: 200;
+    font-size: 1rem;
+    color: rgb(36, 33, 66);
+}
+
+.action-icons {
+    color: rgb(36, 33, 66);
+    font-size: 30px;
+    margin-left: 15%;
+    margin-top: 15%;
+}
+
+.edit-api-key-icons {
+    color: rgb(36, 33, 66);
+    font-size: 25px;
+    margin-left: 5%;
+    /*  margin-top: 15%; */
+}
+
+.company-modal {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.7);
+    left: 0;
+}
+
+.company-form {
+    width: 35%;
+    height: 50%;
+    margin-top: 130px;
+    margin-left: 35%;
+    background-color: whitesmoke;
+    display: none;
+}
+
+.application-form {
+    width: 35%;
+    min-height: 60%;
+    /* margin-top: 130px; */
+    margin-top: 15vh;
+    margin-left: 35%;
+    background-color: whitesmoke;
+    display: none;
+}
+
+.edit-form {
+    width: 35%;
+    min-height: 60%;
+    /* height: 450px; */
+    /* max-height: 80%; */
+    /* height: 450px; */
+    /* margin-top: 120px; */
+    margin-top: 15vh;
+    margin-left: 35%;
+    background-color: whitesmoke;
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.header-div {
+    width: 100%;
+    height: 30%;
+    /* border: 1px solid red; */
+}
+
+.my-logo {
+    width: 43%;
+    height: 100%;
+    /* border: 1px solid green; */
+    float: left;
+}
+
+.header-div-name {
+    width: 55%;
+    height: 100%;
+    /* border: 1px solid black; */
+    float: left;
+    padding-top: 10%;
+}
+
+.img-app-logo {
+    margin-top: 15%;
+    margin-left: 60%;
+}
+
+.new-label {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 1.5rem;
+    color: #2A3F54;
+    font-weight: 200;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    margin: 0 0 1.5rem 0;
+    text-transform: none;
+}
+
+.form-body {
+    width: 100%;
+    height: 60%;
+    /* border: 2px solid red; */
+    margin-top: 10%;
+}
+
+.edit-api-key {
+    width: 50%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 1px solid rgb(214, 214, 214);
+    background: #f1f1f1;
+    margin-left: 10%;
+}
+
+
+/* input[type=text] */
+
+.text-input {
+    width: 70%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: 1px solid rgb(214, 214, 214);
+    background: #f1f1f1;
+    margin-left: 10%;
+}
+
+input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.btn-block {
+    display: block;
+    width: 77%;
+    margin-left: 10%;
+    margin-top: 2%;
+    color: white;
+    border: none;
+    background-color: #2A3F54;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.close-modal {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    position: absolute;
+    left: 68%;
+    /* top: 100px; */
+    top: 13vh;
+    text-align: center;
+}
+
+.x-icon {
+    font-size: 25px;
+    color: #2A3F54;
+    cursor: pointer;
+}
+
+a {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1150px) and (min-width: 900px) {
+    .new-container {
+        width: 100%;
+        height: 90vh;
+        float: right;
+    }
+    .app-btn {
+        width: 26%;
+    }
+    .img-app-logo {
+        margin-left: 38%;
+    }
+    .edit-api-key-icons {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 900px) and (min-width: 768px) {
+    .new-container {
+        width: 100%;
+        height: 90vh;
+        float: right;
+    }
+    .app-btn {
+        width: 26%;
+    }
+    .company-form {
+        width: 40%;
+        height: 50%;
+        margin-left: 31%;
+    }
+    .img-app-logo {
+        margin-top: 15%;
+        margin-left: 40%;
+    }
+    .application-form {
+        width: 45%;
+        /* height: 60%; */
+        /* margin-top: 130px; */
+        margin-left: 26%;
+    }
+    .edit-form {
+        width: 45%;
+        /* height: 60%; */
+        /* margin-top: 130px; */
+        margin-left: 26%;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 480px) {
+    .new-container {
+        width: 100%;
+        height: 90vh;
+        float: right;
+    }
+    .app-btn {
+        width: 42%;
+    }
+    .applications-logo {
+        width: 7%;
+        height: 100%;
+        padding-top: 10px;
+        padding-left: 2%;
+        /* border: 2px solid red; */
+        float: left;
+    }
+    .application-name {
+        height: 100%;
+        width: 25%;
+        /* border: 2px solid black; */
+        float: left;
+        padding-top: 1%;
+        margin-left: 2%;
+    }
+    .desc-name {
+        font-weight: 200;
+        font-size: 18px;
+        color: rgb(36, 33, 66);
+    }
+    .desc-api {
+        font-weight: 200;
+        font-size: 16px;
+        color: rgb(36, 33, 66);
+    }
+    .action-icons {
+        color: rgb(36, 33, 66);
+        font-size: 25px;
+        margin-left: 15%;
+        margin-top: 25%;
+    }
+    .company-form {
+        width: 60%;
+        height: 50%;
+        margin-left: 19%;
+    }
+    .img-app-logo {
+        margin-top: 15%;
+        margin-left: 35%;
+    }
+    .close-modal {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: whitesmoke;
+        position: absolute;
+        left: 75%;
+        /* top: 15%; */
+        /* top: 110px; */
+        text-align: center;
+    }
+    .application-form {
+        width: 60%;
+        /* height: 60%; */
+        /* margin-top: 130px; */
+        margin-left: 19%;
+    }
+    .edit-form {
+        width: 68%;
+        /* height: 60%; */
+        /* margin-top: 130px; */
+        margin-left: 11%;
+    }
+    .desc-api {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .new-container {
+        width: 100%;
+        height: 90vh;
+        float: right;
+    }
+    .app-btn {
+        width: 49%;
+    }
+    .applications-logo {
+        width: 7%;
+        height: 100%;
+        padding-top: 0.75%;
+        padding-left: 1%;
+        /* border: 2px solid red; */
+        float: left;
+    }
+    .application-name {
+        height: 100%;
+        width: 32%;
+        /* border: 2px solid black; */
+        float: left;
+        padding-top: 1%;
+        margin-left: 2%;
+    }
+    .api-key {
+        width: 40%;
+    }
+    .desc-name {
+        font-weight: 200;
+        font-size: 18px;
+        color: rgb(36, 33, 66);
+    }
+    .desc-api {
+        font-weight: 200;
+        font-size: 16px;
+        color: rgb(36, 33, 66);
+    }
+    .action-icons {
+        color: rgb(36, 33, 66);
+        font-size: 25px;
+        margin-left: 15%;
+        margin-top: 25%;
+    }
+    .company-form {
+        width: 60%;
+        height: 50%;
+        margin-left: 19%;
+    }
+    .img-app-logo {
+        margin-top: 15%;
+        margin-left: 35%;
+    }
+    /* .close-modal {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: whitesmoke;
+        position: absolute;
+        left: 75%;
+        top: 110px;
+        text-align: center;
+    } */
+    .application-form {
+        width: 60%;
+        /* height: 60%; */
+        /* margin-top: 130px; */
+        margin-left: 19%;
+    }
+    .edit-form {
+        width: 68%;
+        /* min-height: 450px; */
+        /* min-height: 150px; */
+        /* height: 60%; */
+        /* margin-top: 130px; */
+        margin-left: 15%;
+    }
+    .applications-list {
+        width: 94%;
+        /* height: fit-content; */
+        height: 50%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-left: 3%;
+        margin-top: 4%;
+    }
+    .desc-name {
+        font-weight: 200;
+        font-size: 16px;
+        color: rgb(36, 33, 66);
+    }
+    .desc-api {
+        font-weight: 200;
+        font-size: 14px;
+        color: rgb(36, 33, 66);
+    }
+    .company-form {
+        width: 65%;
+        height: 50%;
+        margin-left: 19%;
+    }
+    .close-modal {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: whitesmoke;
+        position: absolute;
+        left: 78%;
+        /* top: 14%; */
+        /* top: 110px; */
+        top: 13vh;
+        text-align: center;
+    }
+    .application-form {
+        width: 65%;
+        /* height: 60%; */
+        /* margin-top: 130px; */
+        margin-left: 19%;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    .edit-form {
+        height: 350px;
+    }
+    .application-form {
+        height: 350px;
+    }
+}
